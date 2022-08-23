@@ -648,4 +648,21 @@ img {
   right: -5.5rem;
 }
 
+/*======= LOGOS =======*/
+.logos__img {
+  width: 40px;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+.logos__img:hover {
+  opacity: 1;
+}
+.logos__container {
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-bottom: 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
