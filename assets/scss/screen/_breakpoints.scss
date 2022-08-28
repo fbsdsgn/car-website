@@ -1,1 +1,43 @@
 /*======= BREAKPOINTS =======*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  // HOME
+  .home {
+    &__car {
+      column-gap: 2rem;
+    }
+  }
+
+  // ABOUT
+  .about {
+    &__card {
+      width: 150px;
+    }
+  }
+
+  // OFFER
+  .offer {
+    &__container {
+      grid-template-rows: max-content 180px;
+    }
+
+    &__img {
+      width: 340px;
+    }
+  }
+
+  // LOGOS
+  .logos {
+    &__container {
+      gap: 2.5rem;
+    }
+  }
+}
+
+/* For medium devices */
+/* For large devices */
