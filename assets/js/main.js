@@ -108,3 +108,39 @@ function scrollActive() {
   });
 }
 window.addEventListener("scroll", scrollActive);
+
+/*======= SCROLL REVEAL ANIMATION ======= */
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+  // reset: true
+});
+
+// HOME
+sr.reveal(`.home__title`);
+sr.reveal(`.home__subtitle`, { delay: 500 });
+sr.reveal(`.home__elec`, { delay: 600 });
+sr.reveal(`.home__img`, { delay: 600 });
+sr.reveal(`.home__car-data`, { delay: 900, interval: 100, origin: "bottom" });
+sr.reveal(`.home__button`, { delay: 1000, origin: "bottom" });
+// ABOUT
+sr.reveal(`.about__group`, { origin: "left" });
+sr.reveal(`.about__data`, { origin: "right" });
+// POPULAR
+sr.reveal(`.popular__container`);
+// FEATURES
+sr.reveal(`.features__img`);
+sr.reveal(`.features__map`, { delay: 600, origin: "bottom" });
+sr.reveal(`.features__card`, { interval: 300 });
+// FEATURED
+sr.reveal(`.featured__filters`);
+sr.reveal(`.featured__card`, { interval: 100 });
+// OFFER
+sr.reveal(`.offer__data`, { origin: "left" });
+sr.reveal(`.offer__img`, { origin: "right" });
+// LOGOS
+sr.reveal(`.logos__content`, { interval: 100 });
+// FOOTER
+sr.reveal(`.footer__content`, { interval: 100 });
